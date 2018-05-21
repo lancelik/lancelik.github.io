@@ -338,19 +338,14 @@
 
       
         
-          
-            <p> 近段时间使用hexo+github搭建这个博客走了很多弯路，现把搭建可能会遇到的各种问题做一个详细的解答，话不多说直接上手（nodejs和git自己去下载安装）</p>
-<p> 安装hexo：</p>
-<pre><code>`npm install hexo-cli -g`
-</code></pre><p> 随便找个盘下右击git：</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo i blog  //这里blog指的是项目名称  i等同于init</span><br><span class="line">   cd blog      //进入bolg这个文件下</span><br><span class="line">   hexo g       //generetor的缩写</span><br><span class="line">   hexo s       //server的缩写</span><br></pre></td></tr></table></figure>
-<p> 然后打开<a href="http://localhost:4000就可以查看默认主题啦" target="_blank" rel="noopener">http://localhost:4000就可以查看默认主题啦</a></p>
-<p> 当然，这里可以更改其他主题，可以去github上选择，这里我用的是next主题</p>
-<p>  <code>git clone https://github.com/iissnan/hexo-theme-next themes/next</code></p>
-<p>  完成后打开站点配置文件，找到theme字段，把后面的值改为next就好了<br>  改好了以后再终端输入<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean  //清除缓存</span><br><span class="line">hexo g      //重新生成</span><br><span class="line">hexo s      //部署到本地</span><br></pre></td></tr></table></figure></p>
-<p>  这样就可以查看新的主题啦</p>
-
-          
+          <p> 近段时间使用hexo+github搭建这个博客走了很多弯路，现把搭建可能会遇到的各种问题做一个详细的解答，话不多说直接上手（nodejs和git自己去下载安装）</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/05/09/hexo-github搭建(一)/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -473,23 +468,14 @@
 
       
         
-          
-            <h2 id="关于github配置："><a href="#关于github配置：" class="headerlink" title="关于github配置："></a>关于github配置：</h2><p>注册这里就不说了<br><img src="https://lance.wodemo.com/down/20180510/479279/tp01.png" alt=""></p>
-<p>按照图片的流程来</p>
-<p><img src="https://lance.wodemo.com/down/20180510/479280/tp02.png" alt=""></p>
-<p>这里注意，库名称一定要可用户名对应后面再跟github.io</p>
-<p><img src="https://lance.wodemo.com/down/20180510/479281/tp03.png" alt=""></p>
-<p>走到这一步已经就可以点进链接查看你的站点了，当然现在站点什么都没有</p>
-<p><img src="https://lance.wodemo.com/down/20180510/479282/tp04.png" alt=""></p>
-<p>然后就是keys配置了，首先生成密匙</p>
-<pre><code>ssh-keygen -t rsa -C &quot;gdutxiaoxu@163.com&quot;
-</code></pre><p>然后去C:\Users\asus下找到.ssh这个文件夹复制id_rsa.pub这个文件里面的东西，然后</p>
-<p><img src="https://lance.wodemo.com/down/20180510/479286/tp05.png" alt=""></p>
-<p>这样github上的算是配置好了，接下来就是使用git部署到github了</p>
-<p><img src="https://lance.wodemo.com/down/479289/tp06.png" alt=""><br>修改hexo站点配置文件，改成这样就好<br>    注意！冒号后面一定要有一个空格！</p>
-<p>最后部署一下就好了<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save  //装一个插件</span><br><span class="line"></span><br><span class="line">hexo d //部署</span><br><span class="line"></span><br><span class="line">//等一会儿后就可以访问你的网页啦</span><br></pre></td></tr></table></figure></p>
-
-          
+          <h2 id="关于github配置"><a href="#关于github配置" class="headerlink" title="关于github配置"></a>关于github配置</h2><p>很多人在giuhub这里出了很多错，其实也只是按照基本流程和几个注意项就好了<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/05/09/hexo-github搭建(二)/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
