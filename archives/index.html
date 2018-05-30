@@ -28,6 +28,17 @@
 
 
 
+<!--时时沟通-->
+
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "0266dd0f"
+    });
+  daovoice('update');
+  </script>
+
+
 
 
 
@@ -126,6 +137,17 @@
 
 
 
+<!--文章加密-->
+<script>
+    (function(){
+        if(''){
+            if (prompt('此文章被加密，请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
 
   <title>归档 | 小情书</title>
   
@@ -388,9 +410,9 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2018/05/09/hexo-github搭建(一)/" itemprop="url">
+            <a class="post-title-link" href="/2018/05/09/hexo-github搭建(二)/" itemprop="url">
               
-                <span itemprop="name">hexo+github搭建（一）</span>
+                <span itemprop="name">hexo+github搭建（二）</span>
               
             </a>
         
@@ -425,9 +447,9 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2018/05/09/hexo-github搭建(二)/" itemprop="url">
+            <a class="post-title-link" href="/2018/05/09/hexo-github搭建(一)/" itemprop="url">
               
-                <span itemprop="name">hexo+github搭建（二）</span>
+                <span itemprop="name">hexo+github搭建（一）</span>
               
             </a>
         
@@ -605,6 +627,20 @@
           
 
           
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-globe"></i>
+                推荐阅读
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://example.com/" title="Title" target="_blank">Title</a>
+                  </li>
+                
+              </ul>
+            </div>
           
 
           
@@ -1139,4 +1175,5 @@
 </body>
 <!-- 页面点击小红心 -->
 <script type="text/javascript" src="/js/src/love.js"></script>
+
 </html>
