@@ -475,6 +475,177 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/18/hexo的个性化/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小情书">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小情书">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/06/18/hexo的个性化/" itemprop="url">hexo的个性化</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-18T21:31:08+08:00">
+                2018-06-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <blockquote>
+<p>在网上看到有些next主题的网站很炫酷，那么是怎么配置的呢？<br><br>接下来我来讲一讲如何实现一些炫酷的效果</p>
+</blockquote>
+<p><br></p>
+<h2 id="1-在右上角或者左上角实现fork-me-on-github"><a href="#1-在右上角或者左上角实现fork-me-on-github" class="headerlink" title="1. 在右上角或者左上角实现fork me on github"></a>1. 在右上角或者左上角实现fork me on github<br></h2><h3 id="具体实现方法"><a href="#具体实现方法" class="headerlink" title="具体实现方法"></a>具体实现方法</h3><p>点击<a href="http://tholman.com/github-corners/" target="_blank" rel="noopener">这里</a>或者<a href="https://blog.github.com/2008-12-19-github-ribbons/" target="_blank" rel="noopener">这里</a>挑选自己喜欢的样式，并复制代码<br><br>然后粘贴刚才复制的代码到<code>themes/next/layout/_layout.swig</code>文件中(放在<code>&lt;div class=&quot;headband&quot;&gt;&lt;/div&gt;</code>的下面)，并把href改为你的github地址<br><br><img src="https://s20.postimg.cc/5rwmnonrh/hexo_fork_me_on_github.png" alt=""></p>
+<h3 id="实现效果图"><a href="#实现效果图" class="headerlink" title="实现效果图"></a>实现效果图</h3><p><img src="https://s20.postimg.cc/bg2xeppkt/hexo_fork_me_on_github_1.png" alt=""></p>
+<h2 id="2-添加动态背景"><a href="#2-添加动态背景" class="headerlink" title="2. 添加动态背景"></a>2. 添加动态背景</h2><p>在工程文件<code>\themes\next\source\css\_custom\custom.styl</code>找到这个文件，然后添加如下代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">//滚动背景</span><br><span class="line">body &#123;</span><br><span class="line">    background:url(https://source.unsplash.com/random/1600x900);</span><br><span class="line">    background-repeat: no-repeat;</span><br><span class="line">    background-attachment:fixed;</span><br><span class="line">    background-position:50% 50%;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>url里面的是一个图片库地址，不喜欢可以换别的地址</p>
+<h3 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h3><p><img src="https://s20.postimg.cc/umg4hvix9/SGPV_P2_F_N7_A5_6_FF_16_VD.png" alt=""></p>
+<h2 id="实现点击出现桃心效果"><a href="#实现点击出现桃心效果" class="headerlink" title="实现点击出现桃心效果"></a>实现点击出现桃心效果</h2><p><img src="https://upload-images.jianshu.io/upload_images/5308475-78e64c0a80bb559e.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/66" alt=""></p>
+<h3 id="具体实现方法-1"><a href="#具体实现方法-1" class="headerlink" title="具体实现方法"></a>具体实现方法</h3><p>copy这个网址下面的代码<code>http://7u2ss1.com1.z0.glb.clouddn.com/love.js</code>新建<code>love.js</code>文件并且将代码复制进去，然后保存。将<code>love.js</code>文件放到路径<code>/themes/next/source/js/src</code>里面，然后打开<code>\themes\next\layout\_layout.swig</code>文件,在末尾添加以下代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 页面点击小红心 --&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;/js/src/love.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
+<h2 id="修改文章内链接文本样式"><a href="#修改文章内链接文本样式" class="headerlink" title="修改文章内链接文本样式"></a>修改文章内链接文本样式</h2><h3 id="实现效果图-1"><a href="#实现效果图-1" class="headerlink" title="实现效果图"></a>实现效果图</h3><p><img src="https://upload-images.jianshu.io/upload_images/5308475-8cc4fc18c399af7e.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/318" alt=""></p>
+<h3 id="具体实现方法-2"><a href="#具体实现方法-2" class="headerlink" title="具体实现方法"></a>具体实现方法</h3><p>修改文件 <code>themes\next\source\css\_common\components\post\post.styl</code>，在末尾添加如下css样式，：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">// 文章内链接文本样式</span><br><span class="line">.post-body p a&#123;</span><br><span class="line">  color: #0593d3;</span><br><span class="line">  border-bottom: none;</span><br><span class="line">  border-bottom: 1px solid #0593d3;</span><br><span class="line">  &amp;:hover &#123;</span><br><span class="line">    color: #fc6423;</span><br><span class="line">    border-bottom: none;</span><br><span class="line">    border-bottom: 1px solid #fc6423;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>其中选择<code>.post-body</code> 是为了不影响标题，选择 p 是为了不影响首页“阅读全文”的显示样式,颜色可以自己定义。</p>
+<h2 id="在每篇文章末尾统一添加“本文结束”标记"><a href="#在每篇文章末尾统一添加“本文结束”标记" class="headerlink" title="在每篇文章末尾统一添加“本文结束”标记"></a>在每篇文章末尾统一添加“本文结束”标记</h2><h3 id="实现效果图-2"><a href="#实现效果图-2" class="headerlink" title="实现效果图"></a>实现效果图</h3><p><img src="https://upload-images.jianshu.io/upload_images/5308475-90be73acbc5f8a7a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/694" alt=""></p>
+<h3 id="具体实现方法-3"><a href="#具体实现方法-3" class="headerlink" title="具体实现方法"></a>具体实现方法</h3><p>在路径 <code>\themes\next\layout\_macro</code> 中新建 <code>passage-end-tag.swig</code> 文件,并添加以下内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">    &#123;% if not is_index %&#125;</span><br><span class="line">        &lt;div style=&quot;text-align:center;color: #ccc;font-size:14px;&quot;&gt;-------------本文结束&lt;i class=&quot;fa fa-paw&quot;&gt;&lt;/i&gt;感谢您的阅读-------------&lt;/div&gt;</span><br><span class="line">    &#123;% endif %&#125;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>接着打开<code>\themes\next\layout\_macro\post.swig</code>文件，在<code>post-body</code> 之后， <code>post-footer</code> 之前添加如下代码（post-footer之前两个DIV）：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div&gt;</span><br><span class="line">  &#123;% if not is_index %&#125;</span><br><span class="line">    &#123;% include &apos;passage-end-tag.swig&apos; %&#125;</span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p>然后打开主题配置文件（<code>_config.yml</code>),在末尾添加：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 文章末尾添加“本文结束”标记</span><br><span class="line">	passage_end_tag:</span><br><span class="line">  	enabled: true</span><br></pre></td></tr></table></figure></p>
+<hr>
+<p>侧边栏社交小图标设置<br><br>主页文章添加阴影效果<br><br>在网站底部加上访问量<br><br>实现统计功能<br><br>添加顶部加载条<br><br>在文章底部增加版权信息<br><br>文章加密访问<br><br>博文置顶<br><br>修改打赏字体不闪动<br><br>自定义鼠标样式<br><br>DaoVoice 在线联系<br></p>
+<h1 id="明天再写"><a href="#明天再写" class="headerlink" title="明天再写"></a>明天再写</h1>
+          
+        
+      
+    </div>
+	
+	
+    
+    
+    
+	
+	<div>
+      
+	</div>
+
+    
+	
+	<div>
+		
+	</div>
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/25/Spring-Boot-之-HelloWorld详解/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -792,162 +963,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/09/hexo-github搭建(二)/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="小情书">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="小情书">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/09/hexo-github搭建(二)/" itemprop="url">hexo+github搭建（二）</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-09T16:04:21+08:00">
-                2018-05-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">hexo</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h2 id="关于github配置"><a href="#关于github配置" class="headerlink" title="关于github配置"></a>关于github配置</h2><p>很多人在giuhub这里出了很多错，其实也只是按照基本流程和几个注意项就好了<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/05/09/hexo-github搭建(二)/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-	
-	
-    
-    
-    
-	
-	<div>
-      
-	</div>
-
-    
-	
-	<div>
-		
-	</div>
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/09/hexo-github搭建(一)/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1091,6 +1106,162 @@
 
 
     
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/09/hexo-github搭建(二)/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小情书">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小情书">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/09/hexo-github搭建(二)/" itemprop="url">hexo+github搭建（二）</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-09T16:04:21+08:00">
+                2018-05-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="关于github配置"><a href="#关于github配置" class="headerlink" title="关于github配置"></a>关于github配置</h2><p>很多人在giuhub这里出了很多错，其实也只是按照基本流程和几个注意项就好了<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/05/09/hexo-github搭建(二)/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+	
+	
+    
+    
+    
+	
+	<div>
+      
+	</div>
+
+    
+	
+	<div>
+		
+	</div>
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
   </section>
 
   
@@ -1137,7 +1308,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1176,9 +1347,9 @@
                   </span>
                 
                   <span class="links-of-author-item">
-                    <a href="https://blog.csdn.net/qq_36747248" target="_blank" title="CSDN">
+                    <a href="https://www.zhihu.com/people/xiaoqingshu/activities" target="_blank" title="知乎">
                       
-                        <i class="fa fa-fw fa-copyright"></i>CSDN</a>
+                        <i class="fa fa-fw fa-twitter"></i>知乎</a>
                   </span>
                 
                   <span class="links-of-author-item">
