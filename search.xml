@@ -33,17 +33,17 @@
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[hexo+github搭建（一）]]></title>
-    <url>%2F2018%2F05%2F09%2Fhexo-github%E6%90%AD%E5%BB%BA(%E4%B8%80)%2F</url>
-    <content type="text"><![CDATA[近段时间使用hexo+github搭建这个博客走了很多弯路，现把搭建可能会遇到的各种问题做一个详细的解答，话不多说直接上手（nodejs和git自己去下载安装） 安装hexo： `npm install hexo-cli -g` 随便找个盘下右击git： 1234hexo i blog //这里blog指的是项目名称 i等同于init cd blog //进入bolg这个文件下 hexo g //generetor的缩写 hexo s //server的缩写 然后打开http://localhost:4000就可以查看默认主题啦 当然，这里可以更改其他主题，可以去github上选择，这里我用的是next主题 git clone https://github.com/iissnan/hexo-theme-next themes/next 完成后打开站点配置文件，找到theme字段，把后面的值改为next就好了 改好了以后再终端输入 123hexo clean //清除缓存hexo g //重新生成hexo s //部署到本地 这样就可以查看新的主题啦]]></content>
+    <title><![CDATA[hexo+github搭建（二）]]></title>
+    <url>%2F2018%2F05%2F09%2Fhexo-github%E6%90%AD%E5%BB%BA(%E4%BA%8C)%2F</url>
+    <content type="text"><![CDATA[关于github配置很多人在giuhub这里出了很多错，其实也只是按照基本流程和几个注意项就好了注册这里就不说了 按照图片的流程来 这里注意，库名称一定要可用户名对应后面再跟github.io 走到这一步已经就可以点进链接查看你的站点了，当然现在站点什么都没有 然后就是keys配置了，首先生成密匙 ssh-keygen -t rsa -C &quot;gdutxiaoxu@163.com&quot; 然后去C:\Users\asus下找到.ssh这个文件夹复制id_rsa.pub这个文件里面的东西，然后 这样github上的算是配置好了，接下来就是使用git部署到github了 修改hexo站点配置文件，改成这样就好 注意！冒号后面一定要有一个空格！ 最后部署一下就好了12345npm install hexo-deployer-git --save //装一个插件hexo d //部署//等一会儿后就可以访问你的网页啦]]></content>
       <categories>
         <category>hexo</category>
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[hexo+github搭建（二）]]></title>
-    <url>%2F2018%2F05%2F09%2Fhexo-github%E6%90%AD%E5%BB%BA(%E4%BA%8C)%2F</url>
-    <content type="text"><![CDATA[关于github配置很多人在giuhub这里出了很多错，其实也只是按照基本流程和几个注意项就好了注册这里就不说了 按照图片的流程来 这里注意，库名称一定要可用户名对应后面再跟github.io 走到这一步已经就可以点进链接查看你的站点了，当然现在站点什么都没有 然后就是keys配置了，首先生成密匙 ssh-keygen -t rsa -C &quot;gdutxiaoxu@163.com&quot; 然后去C:\Users\asus下找到.ssh这个文件夹复制id_rsa.pub这个文件里面的东西，然后 这样github上的算是配置好了，接下来就是使用git部署到github了 修改hexo站点配置文件，改成这样就好 注意！冒号后面一定要有一个空格！ 最后部署一下就好了12345npm install hexo-deployer-git --save //装一个插件hexo d //部署//等一会儿后就可以访问你的网页啦]]></content>
+    <title><![CDATA[hexo+github搭建（一）]]></title>
+    <url>%2F2018%2F05%2F09%2Fhexo-github%E6%90%AD%E5%BB%BA(%E4%B8%80)%2F</url>
+    <content type="text"><![CDATA[近段时间使用hexo+github搭建这个博客走了很多弯路，现把搭建可能会遇到的各种问题做一个详细的解答，话不多说直接上手（nodejs和git自己去下载安装） 安装hexo： `npm install hexo-cli -g` 随便找个盘下右击git： 1234hexo i blog //这里blog指的是项目名称 i等同于init cd blog //进入bolg这个文件下 hexo g //generetor的缩写 hexo s //server的缩写 然后打开http://localhost:4000就可以查看默认主题啦 当然，这里可以更改其他主题，可以去github上选择，这里我用的是next主题 git clone https://github.com/iissnan/hexo-theme-next themes/next 完成后打开站点配置文件，找到theme字段，把后面的值改为next就好了 改好了以后再终端输入 123hexo clean //清除缓存hexo g //重新生成hexo s //部署到本地 这样就可以查看新的主题啦]]></content>
       <categories>
         <category>hexo</category>
       </categories>
