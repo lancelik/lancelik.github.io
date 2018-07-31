@@ -1063,7 +1063,7 @@ pre .javascript .function {
   right: 30px;
   z-index: 1050;
   padding: 0 6px;
-  width: initial;
+  width: 24px;
   background: #222;
   font-size: 12px;
   opacity: 0.6;
@@ -1993,7 +1993,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff0526;
+  background: #ff82d9;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2787,7 +2787,7 @@ pre .javascript .function {
   overflow: hidden;
   padding: 0;
   width: 240px;
-  background: #fff;
+  background: rgba(255,255,255,0.8);
   box-shadow: initial;
   border-radius: initial;
 }
@@ -2846,7 +2846,7 @@ pre .javascript .function {
   box-sizing: border-box;
   padding: 40px;
   width: 700px;
-  background: rgba(255,255,255,0.6);
+  background: rgba(255,255,255,0.8);
   min-height: 700px;
   box-shadow: initial;
   border-radius: initial;
@@ -2870,7 +2870,7 @@ pre .javascript .function {
   position: static;
   float: left;
   margin-top: 300px;
-  background: rgba(255,255,255,0.6);
+  background: rgba(255,255,255,0.8);
   background: #f5f7f9;
   box-shadow: none;
 }
@@ -3028,7 +3028,7 @@ pre .javascript .function {
   box-sizing: border-box;
   width: 240px;
   color: #555;
-  background: rgba(255,255,255,0.6);
+  background: rgba(255,255,255,0.8);
   box-shadow: initial;
   border-radius: initial;
   opacity: 0;
