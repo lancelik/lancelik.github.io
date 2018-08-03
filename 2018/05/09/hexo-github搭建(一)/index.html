@@ -92,20 +92,18 @@
 
 
 
-<meta name="description" content="摘要: 原创出处:https://zhuanlan.zhihu.com/p/38566684   SpringBoot先于Spring Cloud问世。 SpringBoot相当于脚手架，借助他可以快速搭建房子，它本身不具备任何功能属性，值是普通房间，没有其他任何功能。">
+<meta name="description" content="近段时间使用hexo+github搭建这个博客走了很多弯路，现把搭建可能会遇到的各种问题做一个详细的解答，话不多说直接上手（nodejs和git自己去下载安装）">
 <meta name="keywords" content="Java，HTML5，Python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Spring Boot与Spring Cloud是什么关系?">
-<meta property="og:url" content="http://yoursite.com/Spring-Boot/Spring-Boot与Spring-Cloud是什么关系/index.html">
+<meta property="og:title" content="hexo+github搭建（一）">
+<meta property="og:url" content="http://yoursite.com/2018/05/09/hexo-github搭建(一)/index.html">
 <meta property="og:site_name" content="小情书">
-<meta property="og:description" content="摘要: 原创出处:https://zhuanlan.zhihu.com/p/38566684   SpringBoot先于Spring Cloud问世。 SpringBoot相当于脚手架，借助他可以快速搭建房子，它本身不具备任何功能属性，值是普通房间，没有其他任何功能。">
+<meta property="og:description" content="近段时间使用hexo+github搭建这个博客走了很多弯路，现把搭建可能会遇到的各种问题做一个详细的解答，话不多说直接上手（nodejs和git自己去下载安装）">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://pic4.zhimg.com/v2-f57a99b10e4c9cdc9b79d1641f8c45ea_b.jpg">
-<meta property="og:updated_time" content="2018-07-02T06:15:50.589Z">
+<meta property="og:updated_time" content="2018-05-22T09:10:46.187Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Spring Boot与Spring Cloud是什么关系?">
-<meta name="twitter:description" content="摘要: 原创出处:https://zhuanlan.zhihu.com/p/38566684   SpringBoot先于Spring Cloud问世。 SpringBoot相当于脚手架，借助他可以快速搭建房子，它本身不具备任何功能属性，值是普通房间，没有其他任何功能。">
-<meta name="twitter:image" content="https://pic4.zhimg.com/v2-f57a99b10e4c9cdc9b79d1641f8c45ea_b.jpg">
+<meta name="twitter:title" content="hexo+github搭建（一）">
+<meta name="twitter:description" content="近段时间使用hexo+github搭建这个博客走了很多弯路，现把搭建可能会遇到的各种问题做一个详细的解答，话不多说直接上手（nodejs和git自己去下载安装）">
 
 
 
@@ -135,7 +133,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/Spring-Boot/Spring-Boot与Spring-Cloud是什么关系/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/05/09/hexo-github搭建(一)/"/>
 
 
 
@@ -152,7 +150,7 @@
     })();
 </script>
 
-  <title>Spring Boot与Spring Cloud是什么关系? | 小情书</title>
+  <title>hexo+github搭建（一） | 小情书</title>
   
 
 
@@ -326,7 +324,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/Spring-Boot/Spring-Boot与Spring-Cloud是什么关系/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/09/hexo-github搭建(一)/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="小情书">
@@ -343,7 +341,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Spring Boot与Spring Cloud是什么关系?</h1>
+          <h1 class="post-title" itemprop="name headline">hexo+github搭建（一）</h1>
         
 
         <div class="post-meta">
@@ -355,8 +353,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-02T14:04:22+08:00">
-                2018-07-02
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-09T16:04:21+08:00">
+                2018-05-09
               </time>
             
 
@@ -378,8 +376,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Spring-Boot/" itemprop="url" rel="index">
-                    <span itemprop="name">Spring Boot</span>
+                  <a href="/categories/hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo</span>
                   </a>
                 </span>
 
@@ -415,24 +413,17 @@
       
 
       
-        <blockquote>
-<ul>
-<li>摘要: 原创出处:<a href="https://zhuanlan.zhihu.com/p/38566684" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/38566684</a></li>
-</ul>
-</blockquote>
-<p>SpringBoot先于Spring Cloud问世。</p>
-<p>SpringBoot相当于脚手架，借助他可以快速搭建房子，它本身不具备任何功能属性，值是普通房间，没有其他任何功能。<br><a id="more"></a></p>
-<h2 id="什么是Spring-Boot"><a href="#什么是Spring-Boot" class="headerlink" title="什么是Spring Boot"></a>什么是Spring Boot</h2><p>Spring Boot简化了基于Spring的应用开发，通过少量的代码就能创建一个独立的、产品级别的Spring应用。 Spring Boot为Spring平台及第三方库提供开箱即用的设置，这样你就可以有条不紊地开始。多数Spring Boot应用只需要很少的Spring配置。</p>
-<p>Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来简化新Spring应用的初始搭建以及开发过程。该框架使用了特定的方式来进行配置，从而使开发人员不再需要定义样板化的配置。用我的话来理解，就是Spring Boot其实不是什么新的框架，它默认配置了很多框架的使用方式，就像maven整合了所有的jar包，Spring Boot整合了所有的框架（不知道这样比喻是否合适）。</p>
-<p>Spring Boot的核心思想就是约定大于配置，一切自动完成。采用Spring Boot可以大大的简化你的开发模式，所有你想集成的常用框架，它都有对应的组件支持。如果你对Spring Boot完全不了解。</p>
-<h2 id="什么是Spring-Cloud"><a href="#什么是Spring-Cloud" class="headerlink" title="什么是Spring Cloud"></a>什么是Spring Cloud</h2><p>Spring Cloud是一系列框架的有序集合。它利用Spring Boot的开发便利性巧妙地简化了分布式系统基础设施的开发，如服务发现注册、配置中心、消息总线、负载均衡、断路器、数据监控等，都可以用Spring Boot的开发风格做到一键启动和部署。Spring并没有重复制造轮子，它只是将目前各家公司开发的比较成熟、经得起实际考验的服务框架组合起来，通过Spring Boot风格进行再封装屏蔽掉了复杂的配置和实现原理，最终给开发者留出了一套简单易懂、易部署和易维护的分布式系统开发工具包。</p>
-<p>微服务是可以独立部署、水平扩展、独立访问（或者有独立的数据库）的服务单元，Spring Cloud就是这些微服务的大管家，采用了微服务这种架构之后，项目的数量会非常多，Spring Cloud做为大管家就需要提供各种方案来维护整个生态。</p>
-<p>Spring Cloud就是一套分布式服务治理的框架，既然它是一套服务治理的框架，那么它本身不会提供具体功能性的操作，更专注于服务之间的通讯、熔断、监控等。因此就需要很多的组件来支持一套功能。</p>
-<p>Spring Boot和Spring Cloud的关系</p>
-<p>Spring Boot 是 Spring 的一套快速配置脚手架，可以基于Spring Boot 快速开发单个微服务，Spring Cloud是一个基于Spring Boot实现的云应用开发工具；Spring Boot专注于快速、方便集成的单个微服务个体，Spring Cloud关注全局的服务治理框架；Spring Boot使用了默认大于配置的理念，很多集成方案已经帮你选择好了，能不配置就不配置，Spring Cloud很大的一部分是基于Spring Boot来实现，可以不基于Spring Boot吗？不可以。</p>
-<p>Spring Boot可以离开Spring Cloud独立使用开发项目，但是Spring Cloud离不开Spring Boot，属于依赖的关系。</p>
-<p><img src="https://pic4.zhimg.com/v2-f57a99b10e4c9cdc9b79d1641f8c45ea_b.jpg" alt=""></p>
-<h2 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h2><p>SpringBoot在Spring Clound中起到了承上启下的作用，如果你要学习SpringCloud必须要学习SpringBoot。</p>
+        <p> 近段时间使用hexo+github搭建这个博客走了很多弯路，现把搭建可能会遇到的各种问题做一个详细的解答，话不多说直接上手（nodejs和git自己去下载安装）</p>
+ <a id="more"></a>
+<p> 安装hexo：</p>
+<pre><code>`npm install hexo-cli -g`
+</code></pre><p> 随便找个盘下右击git：</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo i blog  //这里blog指的是项目名称  i等同于init</span><br><span class="line">   cd blog      //进入bolg这个文件下</span><br><span class="line">   hexo g       //generetor的缩写</span><br><span class="line">   hexo s       //server的缩写</span><br></pre></td></tr></table></figure>
+<p> 然后打开<a href="http://localhost:4000就可以查看默认主题啦" target="_blank" rel="noopener">http://localhost:4000就可以查看默认主题啦</a></p>
+<p> 当然，这里可以更改其他主题，可以去github上选择，这里我用的是next主题</p>
+<p>  <code>git clone https://github.com/iissnan/hexo-theme-next themes/next</code></p>
+<p>  完成后打开站点配置文件，找到theme字段，把后面的值改为next就好了<br>  改好了以后再终端输入<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean  //清除缓存</span><br><span class="line">hexo g      //重新生成</span><br><span class="line">hexo s      //部署到本地</span><br></pre></td></tr></table></figure></p>
+<p>  这样就可以查看新的主题啦</p>
 
       
     </div>
@@ -451,12 +442,12 @@
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/Spring-Boot/Spring-Boot与Spring-Cloud是什么关系/">Spring Boot与Spring Cloud是什么关系?</a></p>
+  <p><span>本文标题:</span><a href="/2018/05/09/hexo-github搭建(一)/">hexo+github搭建（一）</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 小情书 的个人博客">小情书</a></p>
-  <p><span>发布时间:</span>2018年07月02日 - 14:07</p>
-  <p><span>最后更新:</span>2018年07月02日 - 14:07</p>
-  <p><span>原始链接:</span><a href="/Spring-Boot/Spring-Boot与Spring-Cloud是什么关系/" title="Spring Boot与Spring Cloud是什么关系?">http://yoursite.com/Spring-Boot/Spring-Boot与Spring-Cloud是什么关系/</a>
-    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/Spring-Boot/Spring-Boot与Spring-Cloud是什么关系/"  aria-label="复制成功！"></i></span>
+  <p><span>发布时间:</span>2018年05月09日 - 16:05</p>
+  <p><span>最后更新:</span>2018年05月22日 - 17:05</p>
+  <p><span>原始链接:</span><a href="/2018/05/09/hexo-github搭建(一)/" title="hexo+github搭建（一）">http://yoursite.com/2018/05/09/hexo-github搭建(一)/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2018/05/09/hexo-github搭建(一)/"  aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -533,8 +524,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/hexo/hexo的个性化/" rel="next" title="hexo的个性化">
-                <i class="fa fa-chevron-left"></i> hexo的个性化
+              <a href="/2018/05/09/hexo-github搭建(二)/" rel="next" title="hexo+github搭建（二）">
+                <i class="fa fa-chevron-left"></i> hexo+github搭建（二）
               </a>
             
           </div>
@@ -542,6 +533,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/05/25/Spring-Boot系列-一-：Spring-Boot-入门篇/" rel="prev" title="Spring Boot系列(一)：Spring Boot 入门篇">
+                Spring Boot系列(一)：Spring Boot 入门篇 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -593,17 +588,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -716,22 +702,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是Spring-Boot"><span class="nav-number">1.</span> <span class="nav-text">什么是Spring Boot</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是Spring-Cloud"><span class="nav-number">2.</span> <span class="nav-text">什么是Spring Cloud</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结："><span class="nav-number">3.</span> <span class="nav-text">总结：</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
