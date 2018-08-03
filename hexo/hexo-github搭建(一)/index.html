@@ -92,25 +92,18 @@
 
 
 
-<meta name="description" content="关于github配置很多人在giuhub这里出了很多错，其实也只是按照基本流程和几个注意项就好了">
+<meta name="description" content="近段时间使用hexo+github搭建这个博客走了很多弯路，现把搭建可能会遇到的各种问题做一个详细的解答，话不多说直接上手（nodejs和git自己去下载安装）">
 <meta name="keywords" content="Java，HTML5，Python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo+github搭建（二）">
-<meta property="og:url" content="http://yoursite.com/2018/05/09/hexo-github搭建(二)/index.html">
+<meta property="og:title" content="hexo+github搭建（一）">
+<meta property="og:url" content="http://yoursite.com/hexo/hexo-github搭建(一)/index.html">
 <meta property="og:site_name" content="小情书">
-<meta property="og:description" content="关于github配置很多人在giuhub这里出了很多错，其实也只是按照基本流程和几个注意项就好了">
+<meta property="og:description" content="近段时间使用hexo+github搭建这个博客走了很多弯路，现把搭建可能会遇到的各种问题做一个详细的解答，话不多说直接上手（nodejs和git自己去下载安装）">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://s20.postimg.cc/5yevhiry5/tp01.png">
-<meta property="og:image" content="https://s20.postimg.cc/gl8omyuyl/tp02.png">
-<meta property="og:image" content="https://s20.postimg.cc/70p202q71/tp03.png">
-<meta property="og:image" content="https://s20.postimg.cc/xlrkvmkul/tp04.png">
-<meta property="og:image" content="https://s20.postimg.cc/a7jljpict/tp05.png">
-<meta property="og:image" content="https://s20.postimg.cc/nogk2jxt9/tp06.png">
-<meta property="og:updated_time" content="2018-06-08T06:26:39.356Z">
+<meta property="og:updated_time" content="2018-05-22T09:10:46.187Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo+github搭建（二）">
-<meta name="twitter:description" content="关于github配置很多人在giuhub这里出了很多错，其实也只是按照基本流程和几个注意项就好了">
-<meta name="twitter:image" content="https://s20.postimg.cc/5yevhiry5/tp01.png">
+<meta name="twitter:title" content="hexo+github搭建（一）">
+<meta name="twitter:description" content="近段时间使用hexo+github搭建这个博客走了很多弯路，现把搭建可能会遇到的各种问题做一个详细的解答，话不多说直接上手（nodejs和git自己去下载安装）">
 
 
 
@@ -140,7 +133,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/05/09/hexo-github搭建(二)/"/>
+  <link rel="canonical" href="http://yoursite.com/hexo/hexo-github搭建(一)/"/>
 
 
 
@@ -157,7 +150,7 @@
     })();
 </script>
 
-  <title>hexo+github搭建（二） | 小情书</title>
+  <title>hexo+github搭建（一） | 小情书</title>
   
 
 
@@ -331,7 +324,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/09/hexo-github搭建(二)/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/hexo/hexo-github搭建(一)/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="小情书">
@@ -348,7 +341,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">hexo+github搭建（二）</h1>
+          <h1 class="post-title" itemprop="name headline">hexo+github搭建（一）</h1>
         
 
         <div class="post-meta">
@@ -420,20 +413,17 @@
       
 
       
-        <h2 id="关于github配置"><a href="#关于github配置" class="headerlink" title="关于github配置"></a>关于github配置</h2><p>很多人在giuhub这里出了很多错，其实也只是按照基本流程和几个注意项就好了<br><a id="more"></a><br>注册这里就不说了<br><img src="https://s20.postimg.cc/5yevhiry5/tp01.png" alt=""></p>
-<p>按照图片的流程来</p>
-<p><img src="https://s20.postimg.cc/gl8omyuyl/tp02.png" alt=""></p>
-<p>这里注意，库名称一定要可用户名对应后面再跟github.io</p>
-<p><img src="https://s20.postimg.cc/70p202q71/tp03.png" alt=""></p>
-<p>走到这一步已经就可以点进链接查看你的站点了，当然现在站点什么都没有</p>
-<p><img src="https://s20.postimg.cc/xlrkvmkul/tp04.png" alt=""></p>
-<p>然后就是keys配置了，首先生成密匙</p>
-<pre><code>ssh-keygen -t rsa -C &quot;gdutxiaoxu@163.com&quot;
-</code></pre><p>然后去C:\Users\asus下找到.ssh这个文件夹复制id_rsa.pub这个文件里面的东西，然后</p>
-<p><img src="https://s20.postimg.cc/a7jljpict/tp05.png" alt=""></p>
-<p>这样github上的算是配置好了，接下来就是使用git部署到github了</p>
-<p><img src="https://s20.postimg.cc/nogk2jxt9/tp06.png" alt=""><br>修改hexo站点配置文件，改成这样就好<br>    注意！冒号后面一定要有一个空格！</p>
-<p>最后部署一下就好了<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save  //装一个插件</span><br><span class="line"></span><br><span class="line">hexo d //部署</span><br><span class="line"></span><br><span class="line">//等一会儿后就可以访问你的网页啦</span><br></pre></td></tr></table></figure></p>
+        <p> 近段时间使用hexo+github搭建这个博客走了很多弯路，现把搭建可能会遇到的各种问题做一个详细的解答，话不多说直接上手（nodejs和git自己去下载安装）</p>
+ <a id="more"></a>
+<p> 安装hexo：</p>
+<pre><code>`npm install hexo-cli -g`
+</code></pre><p> 随便找个盘下右击git：</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo i blog  //这里blog指的是项目名称  i等同于init</span><br><span class="line">   cd blog      //进入bolg这个文件下</span><br><span class="line">   hexo g       //generetor的缩写</span><br><span class="line">   hexo s       //server的缩写</span><br></pre></td></tr></table></figure>
+<p> 然后打开<a href="http://localhost:4000就可以查看默认主题啦" target="_blank" rel="noopener">http://localhost:4000就可以查看默认主题啦</a></p>
+<p> 当然，这里可以更改其他主题，可以去github上选择，这里我用的是next主题</p>
+<p>  <code>git clone https://github.com/iissnan/hexo-theme-next themes/next</code></p>
+<p>  完成后打开站点配置文件，找到theme字段，把后面的值改为next就好了<br>  改好了以后再终端输入<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean  //清除缓存</span><br><span class="line">hexo g      //重新生成</span><br><span class="line">hexo s      //部署到本地</span><br></pre></td></tr></table></figure></p>
+<p>  这样就可以查看新的主题啦</p>
 
       
     </div>
@@ -452,12 +442,12 @@
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/2018/05/09/hexo-github搭建(二)/">hexo+github搭建（二）</a></p>
+  <p><span>本文标题:</span><a href="/hexo/hexo-github搭建(一)/">hexo+github搭建（一）</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 小情书 的个人博客">小情书</a></p>
   <p><span>发布时间:</span>2018年05月09日 - 16:05</p>
-  <p><span>最后更新:</span>2018年06月08日 - 14:06</p>
-  <p><span>原始链接:</span><a href="/2018/05/09/hexo-github搭建(二)/" title="hexo+github搭建（二）">http://yoursite.com/2018/05/09/hexo-github搭建(二)/</a>
-    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2018/05/09/hexo-github搭建(二)/"  aria-label="复制成功！"></i></span>
+  <p><span>最后更新:</span>2018年05月22日 - 17:05</p>
+  <p><span>原始链接:</span><a href="/hexo/hexo-github搭建(一)/" title="hexo+github搭建（一）">http://yoursite.com/hexo/hexo-github搭建(一)/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/hexo/hexo-github搭建(一)/"  aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -534,8 +524,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/08/hello-world/" rel="next" title="致歉">
-                <i class="fa fa-chevron-left"></i> 致歉
+              <a href="/hexo/hexo-github搭建(二)/" rel="next" title="hexo+github搭建（二）">
+                <i class="fa fa-chevron-left"></i> hexo+github搭建（二）
               </a>
             
           </div>
@@ -544,8 +534,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/05/09/hexo-github搭建(一)/" rel="prev" title="hexo+github搭建（一）">
-                hexo+github搭建（一） <i class="fa fa-chevron-right"></i>
+              <a href="/Spring-Boot/Spring-Boot系列-一-：Spring-Boot-入门篇/" rel="prev" title="Spring Boot系列(一)：Spring Boot 入门篇">
+                Spring Boot系列(一)：Spring Boot 入门篇 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -598,17 +588,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -721,22 +702,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#关于github配置"><span class="nav-number">1.</span> <span class="nav-text">关于github配置</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
