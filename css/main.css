@@ -1993,7 +1993,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #4df713;
+  background: #39858f;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3195,6 +3195,9 @@ pre {
 code,
 pre {
   border: 1px solid #d6d6d6;
+}
+.site-meta {
+  background: url("http://107.150.7.125:8000/index.php?user/publicLink&fid=ed80NCoWd6RiDK0_Jmn-2UOfNq57wELi5I1w4Rb6t6J5jWjuYv8yp3HPvSD8FUg9e-MfsoOL8X_eTTvmhbNMIsR3jswYX7c1NkEC12B6PaCREJLVtaq3sEALWpZvnfYqugj4gx2_8CVPC14&file_name=/teble.jpg");
 }
 ::-webkit-scrollbar {
   width: 10px;
